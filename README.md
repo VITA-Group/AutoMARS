@@ -32,7 +32,7 @@
       2. <data_dir> the folder which contains *.b file after performing step <1-6>. It should be under <indexed_data_dir>/<min_count>/
 8. Precompute data distribution
     1. to cache the dataset distribution for later data loading
-      1. python ./scripts/process_data <data_dir>/<min_count>/
+      1. python ./scripts/process_data.py <data_dir>/<min_count>/
 # Running code
 ```console
 # large model
