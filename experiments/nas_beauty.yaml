@@ -1,0 +1,31 @@
+OUTPUT_DIR: "output/beauty"
+PRINT_FREQ: 10000
+DATA:
+  MODE: 'train'
+  NEGATIVE_SAMPLES: 5
+  SHUFFLE: True
+  PATH: 'dataset/reviews_Beauty_5/min_count1/'
+MODEL:
+  NEED_TEXT: True
+  NEED_IMAGE: True
+  NEED_BPR: True
+  NEED_REVIEW: False
+  IMAGE_WEIGHT: 0.0001
+  NAS:
+    SELECTION: 'unified'
+    DERIVATION: "transference"
+    TAU: [10.0, 0.001]
+    LR:
+      MAX: 1e-3
+    COMBINE_FUNC: ['concat', 'max', 'add', 'mean']
+    STEPS: 100
+TRAIN:
+  BATCH_SIZE: 64
+  LR: 0.5
+  BEGIN_EPOCH: 0
+  END_EPOCH: 50
+  CLIP_NORM: 5.0
+  SCHEDULER: 'jrl'
+  DISTILL:
+    ENABLED: False
+    PATH: ''
