@@ -1,3 +1,8 @@
+# AutoMARS: Searching to Compress Multi-Modality Recommendation Systems 
+Code used for AutoMARS: Searching to Compress Multi-Modality Recommendation Systems
+# Methodology
+![alt text](https://github.com/VITA-Group/AutoMARS/blob/main/thumbnail.JPG)
+
 # Data processing
 1. Download Amazon review datasets from http://jmcauley.ucsd.edu/data/amazon/ (e.g. In our paper, we used 5-core data).
 2. Stem and remove stop words from the Amazon review datasets if needed (e.g. In our paper, we stem the field of "reviewText" and "summary" without stop words removal)
@@ -42,3 +47,4 @@ python jrl/main.py --search --train --budget "0.6+0.4" --cfg experiments/<file>.
 # small model
 python jrl/main.py --search --train --budget "0.4+0.2" --cfg experiments/<file>.yaml OUTPUT_DIR <output_dir>
 ```
+# Citation
