@@ -48,3 +48,5 @@ python jrl/main.py --search --train --budget "0.6+0.4" --cfg experiments/<file>.
 python jrl/main.py --search --train --budget "0.4+0.2" --cfg experiments/<file>.yaml OUTPUT_DIR <output_dir>
 ```
 # Citation
+Duc Hoang, Haotao Wang, Handong Zhao, Ryan Rossi, Sungchul Kim, Kanak Mahadik, and Zhangyang Wang. 2022. AutoMARS: Searching to Compress Multi-Modality Recommendation Systems. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (CIKM '22). Association for Computing Machinery, New York, NY, USA, 727–736. https://doi.org/10.1145/3511808.3557242
+
